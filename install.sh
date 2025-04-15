@@ -78,6 +78,12 @@ sudo systemctl enable tonalflex-autostart
 sudo systemctl start tonalflex-autostart 
 
 # Setup complete
-echo "✅ Tonalflex installation complete! Rebooting..."
-# sudo reboot
+echo "✅ Tonalflex installation complete!"
+echo "🕓 Autostart service is enabled and will run on next boot."
+
+# Optional: leave reboot decision to user
+read -p "Reboot now? [y/N]: " answer
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+  sudo reboot
+fi
 
