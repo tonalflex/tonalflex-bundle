@@ -1,0 +1,16 @@
+[Unit]
+Description=TonalFlex Autostart Script for Sushi and Envoy
+After=custom-elk.target
+Wants=custom-elk.target
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /udata/autostart.sh
+User=mind
+Group=mind
+RemainAfterExit=yes
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=custom-elk.target
