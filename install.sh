@@ -9,12 +9,15 @@ JQ_PATH="/usr/bin/jq"
 JQ_URL="https://github.com/jqlang/jq/releases/download/jq-1.7.1/jq-linux-arm64"
 
 cat << "EOF"
+  
  _____                 _  __ _           
 |_   _|__  _ __   __ _| |/ _| | _____  __
   | |/ _ \| '_ \ / _` | | |_| |/ _ \ \/ /
   | | (_) | | | | (_| | |  _| |  __/>  < 
   |_|\___/|_| |_|\__,_|_|_| |_|\___/_/\_\
+
         🎛️  INSTALLING TONALFLEX...
+  
 EOF
 
 # Check if jq is installed
