@@ -29,6 +29,7 @@ _Replace elk-pi.local with your device's IP address if needed._
 ### 2. Download and run the installer
 
 ```sh
+cd /home/mind
 git clone https://github.com/tonalflex/tonalflex-bundle.git
 cd tonalflex-bundle
 chmod +x install.sh
