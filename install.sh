@@ -69,14 +69,15 @@ rm -rf "$TMP_DIR"
 
 # Install autostart script
 echo "🚀 Setting up device autostart..."
-chmod +x autostart/autostart.sh
+sudo chmod +x autostart/autostart.sh
 sudo cp autostart/autostart.sh /udata/autostart.sh
 sudo cp autostart/tonalflex-autostart.service /lib/systemd/system/tonalflex-autostart.service
 
 sudo systemctl daemon-reload  
 sudo systemctl enable tonalflex-autostart
 sudo systemctl start tonalflex-autostart 
-sudo reboot
 
 # Setup complete
-echo "✅ Tonalflex installation complete!"
+echo "✅ Tonalflex installation complete! Rebooting..."
+# sudo reboot
+

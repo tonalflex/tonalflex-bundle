@@ -6,7 +6,7 @@ ENVOY_BIN="/usr/bin/envoy"
 
 # Configuration files
 SUSHI_CONFIG="/home/mind/config_files/empty.json"
-ENVOY_CONFIG="/home/mind/envoy/envoy.yaml"
+ENVOY_CONFIG="/home/mind/tonalflex-bundle/config/envoy.yaml"
 
 # Log files
 SUSHI_LOG="/tmp/sushi.log"
