@@ -66,3 +66,13 @@ echo "✅ All binaries and plugins installed successfully."
 
 # Clean up
 rm -rf "$TMP_DIR"
+
+# Install autostart script
+chmod +x autostart/autostart.sh
+cp autostart/autostart.sh /udata/autostart.sh
+cp autostart/tonalflex-autostart.service /lib/systemd/system/tonalflex-autostart.service
+
+sudo systemctl daemon-reload  
+sudo systemctl enable tonalflex-autostart
+sudo systemctl start tonalflex-autostart 
+sudo reboot
