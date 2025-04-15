@@ -42,7 +42,7 @@ fi
 
 mkdir -p "$CORE_DIR" "$PLUGIN_DIR" "$TMP_DIR"
 
-echo -e "📦 Installing TonalFlex binaries from $MANIFEST_FILE...\n"
+echo -e "🎚️ Installing TonalFlex binaries from $MANIFEST_FILE...\n"
 
 # Install core components
 jq -c '.core[]' "$MANIFEST_FILE" | while read -r item; do
@@ -88,14 +88,11 @@ sudo cp autostart/tonalflex-autostart.service /lib/systemd/system/tonalflex-auto
 sudo systemctl daemon-reload  
 sudo systemctl enable tonalflex-autostart
 sudo systemctl start tonalflex-autostart 
+echo -e "🕓 Autostart service is enabled and will run on next boot.\n"
 
-# Setup complete
-echo "✅ Tonalflex installation complete!"
-echo "🕓 Autostart service is enabled and will run on next boot."
+echo -e "✅ Tonalflex installation complete! \n"
 
-# Optional: leave reboot decision to user
 read -p "Reboot now? [y/N]: " answer
 if [[ "$answer" =~ ^[Yy]$ ]]; then
   sudo reboot
 fi
-
