@@ -1,5 +1,5 @@
 [Unit]
-Description=TonalFlex Autostart Script for Sushi and Envoy
+Description=TonalFlex Autostart Script
 After=custom-elk.target
 Wants=custom-elk.target
 

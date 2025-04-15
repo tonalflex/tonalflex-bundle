@@ -4,7 +4,7 @@
 SUSHI_BIN="/usr/bin/sushi"
 ENVOY_BIN="/usr/bin/envoy"
 BUTLER_BIN="/usr/bin/butler"
-UI_SERVER_BIN="/usr/bin/ui_server"
+UI_SERVER_BIN="/usr/bin/ui-server"
 
 # Configuration files
 SUSHI_CONFIG="/home/mind/config_files/empty.json"
@@ -17,33 +17,33 @@ AUTOSTART_LOG="/tmp/autostart.log"
 
 # Check if executables exist
 if [ ! -x "$SUSHI_BIN" ]; then
-    echo "Error: Sushi binary not found at $SUSHI_BIN" > "$AUTOSTART_LOG"
+    echo "Error: Sushi binary not found at $SUSHI_BIN" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
 if [ ! -x "$ENVOY_BIN" ]; then
-    echo "Error: Envoy binary not found at $ENVOY_BIN" > "$AUTOSTART_LOG"
+    echo "Error: Envoy binary not found at $ENVOY_BIN" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
 if [ ! -x "$BUTLER_BIN" ]; then
-    echo "Error: Butler binary not found at $BUTLER_BIN" > "$AUTOSTART_LOG"
+    echo "Error: Butler binary not found at $BUTLER_BIN" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
 if [ ! -x "$UI_SERVER_BIN" ]; then
-    echo "Error: UI server binary not found at $UI_SERVER_BIN" > "$AUTOSTART_LOG"
+    echo "Error: UI server binary not found at $UI_SERVER_BIN" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
 # Check if configuration files exist
 if [ ! -f "$SUSHI_CONFIG" ]; then
-    echo "Error: Sushi config not found at $SUSHI_CONFIG" > "$AUTOSTART_LOG"
+    echo "Error: Sushi config not found at $SUSHI_CONFIG" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
 if [ ! -f "$ENVOY_CONFIG" ]; then
-    echo "Error: Envoy config not found at $ENVOY_CONFIG" > "$AUTOSTART_LOG"
+    echo "Error: Envoy config not found at $ENVOY_CONFIG" >> "$AUTOSTART_LOG"
     exit 1
 fi
 
