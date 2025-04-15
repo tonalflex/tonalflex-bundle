@@ -3,6 +3,8 @@
 # Paths to executables
 SUSHI_BIN="/usr/bin/sushi"
 ENVOY_BIN="/usr/bin/envoy"
+BUTLER_BIN="/usr/bin/butler"
+UI_SERVER_BIN="/usr/bin/ui_server"
 
 # Configuration files
 SUSHI_CONFIG="/home/mind/config_files/empty.json"
@@ -21,6 +23,16 @@ fi
 
 if [ ! -x "$ENVOY_BIN" ]; then
     echo "Error: Envoy binary not found at $ENVOY_BIN" > "$AUTOSTART_LOG"
+    exit 1
+fi
+
+if [ ! -x "$BUTLER_BIN" ]; then
+    echo "Error: Butler binary not found at $BUTLER_BIN" > "$AUTOSTART_LOG"
+    exit 1
+fi
+
+if [ ! -x "$UI_SERVER_BIN" ]; then
+    echo "Error: UI server binary not found at $UI_SERVER_BIN" > "$AUTOSTART_LOG"
     exit 1
 fi
 
@@ -54,6 +66,12 @@ fi
 
 # Start Envoy
 $ENVOY_BIN -c "$ENVOY_CONFIG" --log-path "$ENVOY_LOG" &
+
+# Start Butler
+$BUTLER_BIN &
+
+# Start UI server
+$UI_SERVER_BIN &
 
 # Log success
 echo "Started Sushi and Envoy on $(date)" >> "$AUTOSTART_LOG"
