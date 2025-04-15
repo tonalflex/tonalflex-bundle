@@ -1,6 +1,6 @@
 # TonalFlex Bundle
 
-This repository contains the installer script for running the complete **TonalFlex app bundle** on a Raspberry Pi running [Elk Audio OS](https://elk.audio/elk-audio-os/).
+This repository contains the installer script for running the complete **TonalFlex app bundle** on a Raspberry Pi running [Elk Audio OS](https://www.elk.audio/).
 
 The installer fetches and installs the latest versions of all required core components and plugins from the official TonalFlex release repositories.
 
@@ -8,7 +8,7 @@ The installer fetches and installs the latest versions of all required core comp
 
 ## 🔧 Requirements
 
-- Raspberry Pi running [Elk Audio OS](https://elk.audio/elk-audio-os/)
+- Raspberry Pi running [Elk Audio OS](https://github.com/elk-audio/elk-pi)
 - Internet connection
 - SSH access to the device
 
