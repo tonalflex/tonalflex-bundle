@@ -31,7 +31,7 @@ if ! command -v jq >/dev/null 2>&1; then
     exit 1
   fi
 
-  echo "✅ jq installed successfully."
+  echo -e "✅ jq installed successfully.\n"
 fi
 
 # Check that the manifest file exists
@@ -42,7 +42,7 @@ fi
 
 mkdir -p "$CORE_DIR" "$PLUGIN_DIR" "$TMP_DIR"
 
-echo "📦 Installing TonalFlex binaries from $MANIFEST_FILE..."
+echo -e "📦 Installing TonalFlex binaries from $MANIFEST_FILE...\n"
 
 # Install core components
 jq -c '.core[]' "$MANIFEST_FILE" | while read -r item; do
@@ -50,14 +50,14 @@ jq -c '.core[]' "$MANIFEST_FILE" | while read -r item; do
   URL=$(echo "$item" | jq -r '.url')
   BINARY=$(echo "$item" | jq -r '.binary')
 
-  echo "→ Installing core binary: $NAME"
+  echo "📦 Installing core binary: $NAME"
 
   wget -O "$TMP_DIR/$BINARY.tar.gz" "$URL"
   tar -xzf "$TMP_DIR/$BINARY.tar.gz" -C "$TMP_DIR"
   sudo chmod +x "$TMP_DIR/$BINARY"
   sudo mv "$TMP_DIR/$BINARY" "$CORE_DIR/$BINARY"
 
-  echo "✔️  Installed $BINARY to $CORE_DIR"
+  echo -e "✔️  Installed $BINARY to $CORE_DIR \n"
 done
 
 # Install plugins
@@ -66,15 +66,15 @@ jq -c '.plugins[]' "$MANIFEST_FILE" | while read -r item; do
   URL=$(echo "$item" | jq -r '.url')
   BINARY=$(echo "$item" | jq -r '.binary')
 
-  echo "→ Installing plugin: $NAME"
+  echo "📦 Installing plugin: $NAME"
 
   wget -O "$TMP_DIR/$BINARY.tar.gz" "$URL"
   tar -xzf "$TMP_DIR/$BINARY.tar.gz" -C "$PLUGIN_DIR"
 
-  echo "✔️  Installed plugin to $PLUGIN_DIR"
+  echo -e "✔️  Installed plugin to $PLUGIN_DIR\n"
 done
 
-echo "✅ All binaries and plugins installed successfully."
+echo -e "✅ All binaries and plugins installed successfully. \n"
 
 # Clean up
 rm -rf "$TMP_DIR"
