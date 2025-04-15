@@ -42,7 +42,7 @@ fi
 
 mkdir -p "$CORE_DIR" "$PLUGIN_DIR" "$TMP_DIR"
 
-echo -e "🎚️ Installing TonalFlex binaries from $MANIFEST_FILE...\n"
+echo -e "Installing TonalFlex binaries from $MANIFEST_FILE...\n"
 
 # Install core components
 jq -c '.core[]' "$MANIFEST_FILE" | while read -r item; do
