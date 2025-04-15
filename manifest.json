@@ -1,0 +1,39 @@
+{
+    "core": [
+      {
+        "name": "ui-server",
+        "repo": "tonalflex/tonalflex-ui",
+        "version": "v0.0.1",
+        "arch": "arm64",
+        "binary": "ui-server",
+        "url": "https://github.com/tonalflex/tonalflex-ui/releases/latest/download/ui-server-linux-arm64.tar.gz"
+      },
+      {
+        "name": "butler",
+        "repo": "tonalflex/tonalflex-butler",
+        "version": "v0.0.1",
+        "arch": "arm64",
+        "binary": "butler",
+        "url": "https://github.com/tonalflex/tonalflex-butler/releases/latest/download/butler-linux-arm64.tar.gz"
+      },
+      {
+        "name": "envoy-proxy",
+        "repo": "tonalflex/envoy-arm64-builder",
+        "version": "v1.34.0",
+        "arch": "arm64",
+        "binary": "envoy",
+        "url": "https://github.com/tonalflex/envoy-arm64-builder/releases/latest/download/envoy.tar.gz"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "template-plugin",
+        "repo": "tonalflex/tonalflex-template-plugin",
+        "version": "v0.0.3",
+        "arch": "arm64",
+        "binary": "plugin",
+        "url": "https://github.com/tonalflex/tonalflex-template-plugin/releases/latest/download/plugin-arm64-headless.tar.gz"
+      }
+    ]
+  }
+  
