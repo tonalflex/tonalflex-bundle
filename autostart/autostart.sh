@@ -75,3 +75,4 @@ $UI_SERVER_BIN &
 
 # Log success
 echo "Started Sushi and Envoy on $(date)" >> "$AUTOSTART_LOG"
+exit 0
