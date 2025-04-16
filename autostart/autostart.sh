@@ -7,7 +7,7 @@ BUTLER_BIN="/usr/bin/butler"
 UI_SERVER_BIN="/usr/bin/ui-server"
 
 # Configuration files
-SUSHI_CONFIG="/home/mind/config_files/empty.json"
+SUSHI_CONFIG="/home/mind/tonalflex-bundle/config/tonalflex-8-ch.json"
 ENVOY_CONFIG="/home/mind/tonalflex-bundle/config/envoy.yaml"
 
 # Log files

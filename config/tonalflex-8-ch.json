@@ -1,0 +1,165 @@
+{
+  "host_config": {
+    "samplerate": 48000,
+    "playing_mode": "playing"
+  },
+  "pre_track": {
+    "name": "pre",
+    "plugins": [
+      {
+        "uid": "sushi.testing.gain",
+        "name": "pregain",
+        "type": "internal"
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "name": "Track1",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track2",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track3",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track4",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track5",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track6",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track7",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track8",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    }
+  ],
+  "post_track": {
+    "name": "post",
+    "plugins": [
+      {
+        "uid": "sushi.testing.peakmeter",
+        "name": "peakmeter",
+        "type": "internal"
+      }
+    ]
+  },
+  "initial_state": []
+}
