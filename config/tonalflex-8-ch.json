@@ -3,9 +3,19 @@
     "samplerate": 48000,
     "playing_mode": "playing"
   },
+  "pre_track": {
+    "name": "pre",
+    "plugins": [
+      {
+        "uid": "sushi.testing.gain",
+        "name": "pregain",
+        "type": "internal"
+      }
+    ]
+  },
   "tracks": [
     {
-      "name": "Track_Pre",
+      "name": "Track1",
       "channels": 2,
       "inputs": [
         {
@@ -13,274 +23,143 @@
           "track_bus": 0
         }
       ],
-      "outputs": [],
-      "plugins": [
+      "outputs": [
         {
-          "uid": "sushi.testing.send",
-          "name": "Pre_send",
-          "type": "internal"
+          "track_bus": 0,
+          "engine_bus": 0
         }
-      ]
-    },
-    {
-      "name": "Track1",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track1_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track1_send",
-          "type": "internal"
-        }
-      ]
+      ],
+      "plugins": []
     },
     {
       "name": "Track2",
       "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track2_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track2_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track3",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track3_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track3_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track4",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track4_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track4_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track5",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track5_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track5_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track6",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track6_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track6_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track7",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track7_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track7_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track8",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [],
-      "plugins": [
-        {
-          "uid": "sushi.testing.return",
-          "name": "Track8_return",
-          "type": "internal"
-        },
-        {
-          "uid": "sushi.testing.send",
-          "name": "Track8_send",
-          "type": "internal"
-        }
-      ]
-    },
-    {
-      "name": "Track_Post",
-      "channels": 2,
-      "inputs": [],
-      "outputs": [
+      "inputs": [
         {
           "engine_bus": 0,
           "track_bus": 0
         }
       ],
-      "plugins": [
+      "outputs": [
         {
-          "uid": "sushi.testing.return",
-          "name": "Post_return",
-          "type": "internal"
+          "track_bus": 0,
+          "engine_bus": 0
         }
-      ]
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track3",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track4",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track5",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track6",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track7",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
+    },
+    {
+      "name": "Track8",
+      "channels": 2,
+      "inputs": [
+        {
+          "engine_bus": 0,
+          "track_bus": 0
+        }
+      ],
+      "outputs": [
+        {
+          "track_bus": 0,
+          "engine_bus": 0
+        }
+      ],
+      "plugins": []
     }
   ],
-  "initial_state": [
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track1_return"
+  "post_track": {
+    "name": "post",
+    "plugins": [
+      {
+        "uid": "sushi.testing.peakmeter",
+        "name": "peakmeter",
+        "type": "internal"
       }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track2_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track3_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track4_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track5_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track6_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track7_return"
-      }
-    },
-    {
-      "processor": "Pre_send",
-      "properties": {
-        "destination_name": "Track8_return"
-      }
-    },
-    {
-      "processor": "Track1_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track2_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track3_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track4_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track5_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track6_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track7_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    },
-    {
-      "processor": "Track8_send",
-      "properties": {
-        "destination_name": "Post_return"
-      }
-    }
-  ]
+    ]
+  },
+  "initial_state": []
 }
