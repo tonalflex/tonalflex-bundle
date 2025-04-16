@@ -54,24 +54,24 @@ if [ -f "$AUDIO_HAT_FILE" ] && [ -s "$AUDIO_HAT_FILE" ]; then
     LINE_COUNT=$(echo "$HAT_CONTENT" | grep -v "^$" | wc -l)
     if [ "$LINE_COUNT" -eq 1 ] && [ "$HAT_CONTENT" = "elkpi-stereo" ]; then
         echo "Only elkpi-stereo detected, starting Sushi in dummy mode" >> "$AUTOSTART_LOG"
-        $SUSHI_BIN -dummy --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1 &
+        $SUSHI_BIN -dummy --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1
     else
         echo "Multiple audio devices detected (including HAT): $HAT_CONTENT, starting Sushi in real-time mode" >> "$AUTOSTART_LOG"
-        $SUSHI_BIN -r --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1 &
+        $SUSHI_BIN -r --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1
     fi
 else
     echo "No audio HAT detected, starting Sushi in dummy mode" >> "$AUTOSTART_LOG"
-    $SUSHI_BIN -dummy --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1 &
+    $SUSHI_BIN -dummy --multicore-processing=2 -c "$SUSHI_CONFIG" > "$SUSHI_LOG" 2>&1
 fi
 
 # Start Envoy
-$ENVOY_BIN -c "$ENVOY_CONFIG" --log-path "$ENVOY_LOG" &
+$ENVOY_BIN -c "$ENVOY_CONFIG" --log-path "$ENVOY_LOG"
 
 # Start Butler
-$BUTLER_BIN &
+$BUTLER_BIN
 
 # Start UI server
-$UI_SERVER_BIN &
+$UI_SERVER_BIN
 
 # Log success
 echo "Started Sushi and Envoy on $(date)" >> "$AUTOSTART_LOG"
