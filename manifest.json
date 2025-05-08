@@ -11,7 +11,7 @@
     {
       "name": "butler",
       "repo": "tonalflex/tonalflex-butler",
-      "version": "v0.0.1",
+      "version": "v0.0.2",
       "arch": "arm64",
       "binary": "butler",
       "url": "https://github.com/tonalflex/tonalflex-butler/releases/latest/download/butler-linux-arm64.tar.gz"
@@ -33,6 +33,22 @@
       "arch": "arm64",
       "binary": "plugin",
       "url": "https://github.com/tonalflex/tonalflex-template-plugin/releases/latest/download/plugin-arm64-headless.tar.gz"
+    },
+    {
+      "name": "neuralamp-plugin",
+      "repo": "tonalflex/tonalflex-neuralamp-plugin",
+      "version": "v0.0.1",
+      "arch": "arm64",
+      "binary": "neuralamp",
+      "url": "https://github.com/tonalflex/tonalflex-template-plugin/releases/latest/download/neuralamp-arm64-headless.tar.gz"
+    },
+    {
+      "name": "delay-plugin",
+      "repo": "tonalflex/tonalflex-delay-plugin",
+      "version": "v0.0.0",
+      "arch": "arm64",
+      "binary": "delay",
+      "url": "https://github.com/tonalflex/tonalflex-template-plugin/releases/latest/download/delay-arm64-headless.tar.gz"
     }
   ]
 }
