@@ -5,10 +5,13 @@ Wants=custom-elk.target
 
 [Service]
 Type=simple
+RemainAfterExit=yes
+LimitRTPRIO=infinity
+LimitMEMLOCK=infinity
+LimitSTACK=infinity
+WorkingDirectory=/home/mind
 ExecStart=/bin/bash /udata/autostart.sh
 User=mind
-Group=mind
-RemainAfterExit=yes
 StandardOutput=journal
 StandardError=journal
 
