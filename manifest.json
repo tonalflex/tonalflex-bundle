@@ -40,7 +40,7 @@
       "version": "v0.0.1",
       "arch": "arm64",
       "binary": "neuralamp",
-      "url": "https://github.com/tonalflex/tonalflex-neuralamp-plugin/releases/latest/download/neuralamp-arm64-headless.tar.gz"
+      "url": "https://github.com/tonalflex/tonalflex-neuralamp-plugin/releases/latest/download/plugin-arm64-headless.tar.gz"
     },
     {
       "name": "delay-plugin",
@@ -48,7 +48,7 @@
       "version": "v0.0.0",
       "arch": "arm64",
       "binary": "delay",
-      "url": "https://github.com/tonalflex/tonalflex-delay-plugin/releases/latest/download/delay-arm64-headless.tar.gz"
+      "url": "https://github.com/tonalflex/tonalflex-delay-plugin/releases/latest/download/plugin-arm64-headless.tar.gz"
     }
   ]
 }
