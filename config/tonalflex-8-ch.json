@@ -5,13 +5,7 @@
   },
   "pre_track": {
     "name": "pre",
-    "plugins": [
-      {
-        "uid": "sushi.testing.gain",
-        "name": "pregain",
-        "type": "internal"
-      }
-    ]
+    "plugins": []
   },
   "tracks": [
     {
