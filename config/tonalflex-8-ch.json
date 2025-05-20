@@ -155,5 +155,42 @@
       }
     ]
   },
-  "initial_state": []
+  "initial_state": [
+     {
+        "processor" : "pre",
+        "parameters" : {
+            "gain" : 0.5
+        }
+    },
+    {
+      "processor" : "Track1",
+      "parameters" : {
+          "gain" : 0.5
+      }
+    },
+        {
+      "processor" : "Track2",
+      "parameters" : {
+          "gain" : 0.5
+      }
+    },
+        {
+      "processor" : "Track3",
+      "parameters" : {
+          "gain" : 0.5
+      }
+    },
+        {
+      "processor" : "Track4",
+      "parameters" : {
+          "gain" : 0.5
+      }
+    },
+        {
+      "processor" : "Track5",
+      "parameters" : {
+          "gain" : 0.5
+      }
+    }
+  ]
 }
