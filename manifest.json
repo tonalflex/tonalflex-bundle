@@ -3,7 +3,7 @@
     {
       "name": "ui-server",
       "repo": "tonalflex/tonalflex-ui",
-      "version": "v0.0.6",
+      "version": "v0.0.8",
       "arch": "arm64",
       "binary": "ui-server",
       "url": "https://github.com/tonalflex/tonalflex-ui/releases/latest/download/ui-server-linux-arm64.tar.gz"
